@@ -92,7 +92,7 @@ export class AIReviewService {
       model,
       messages: [{ role: "user", content: prompt }],
       temperature: 0.9,
-      max_tokens: 500,
+      max_tokens: 50,
     });
 
     return response.choices[0]?.message?.content?.trim() || "";
@@ -117,7 +117,7 @@ export class AIReviewService {
       model,
       messages: [{ role: "user", content: prompt }],
       temperature: 0.9,
-      max_tokens: 500,
+      max_tokens: 50,
     });
 
     return response.choices[0]?.message?.content?.trim() || "";
@@ -252,7 +252,7 @@ ${highlights ? `Customer highlights: ${highlights}` : ""}
 ${serviceInstructions}
 
 Strict instructions:
-- Review must be between 300 and 350 characters.
+- Review must be between 200 characters.
 - No repetition of ideas or sentence structures.
 - First sentence must always be different.
 - Use fresh adjectives and sentence tone.
