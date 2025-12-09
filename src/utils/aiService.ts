@@ -252,7 +252,7 @@ ${highlights ? `Customer highlights: ${highlights}` : ""}
 ${serviceInstructions}
 
 Strict instructions:
-- Review must be between 300 and 350 characters.
+- Review must be between 250 and 300 characters.
 - No repetition of ideas or sentence structures.
 - First sentence must always be different.
 - Use fresh adjectives and sentence tone.
